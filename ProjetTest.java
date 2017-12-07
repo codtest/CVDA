@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package projettest;
-
+import java.util.Scanner;
 /**
  *
  * @author Florian Perreaut
@@ -16,35 +16,35 @@ public class ProjetTest {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int tab[][]=new int[5][5];
+        int x = 5, y = 5;
+        int tab[][]=new int[x][y];
         
-        saisirvaleur(5,0,2,tab);
-        affichertab(tab);
-        
+        saisirvaleur(tab);
+        affichertab(tab, x, y);
     }
     
-    public static void saisirvaleur(int val,int x,int y,int tab[][])
-    {
-        tab[x][y]=val;
+    public static void saisirvaleur(int tab[][])
+    { 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Saisissez la valeur à insérer dans le tabelau:");
+        int val = sc.nextInt();
+        System.out.println("Saisissez l'indice x puis l'indice y pour votre valeur:");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        tab[x][y]=val; 
     }
     
-    public static void affichertab(int tab[][])
+    public static void affichertab(int tab[][], int x, int y)
     {
-        int x,y;
-        
-        for(x=0;x<tab.length;x++)
+        int i,j;
+        System.out.print("\n");
+        for(i=0;i<x;i++)
         {
-            for(y=0;y<tab.length;y++)
+            for(j=0;j<y;j++)
             {
-                if(y%5==0)
-                {
-                    System.out.println(tab[x][y]);
-                }
-                else
-                {
-                    System.out.print(tab[x][y]);
-                }
+                    System.out.print(tab[i][j]);
             }
+            System.out.print("\n");
         }
         
     }
