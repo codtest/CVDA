@@ -1,14 +1,20 @@
-Test 1
+Explication du Projet :
+
+Le but du projet est de créer un programme permettant à l'utilisateur de créer un tableau à deux
+dimensions et pouvoir le modifier.L'utilisateur peut le remplir entièrement avec un seul caractère,
+saisir des caractères dans le tableau et l'afficher.
+
+Test 1 (cas ou le programe fonctionne)
 
 Le programme fonctionne lorsque l'on veut afficher le tableau.
 
 L'utilisateur pour afficher le tableau doit saisir la valeur 1.
 
-Test 2 
+Test 2 (cas ou le programme ne fonctionne pas)
 
 Le programme plante à la création du tableau si l'utilisateur saisit des caractères pour définir sa taille.
 
-Test 3
+Test 3 (Les limites du programme)
 
 Les limites de se programme sont qu'il ne permet pas de saisir plusieurs valeurs à la suite
 rapidement dans le tableau.
