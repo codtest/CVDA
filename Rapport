@@ -1,0 +1,12 @@
+Test 1
+
+Le programme fonctionne lorsque l'on veut afficher le tableau
+
+Test 2 
+
+Le programme plante dans le cas ou on éssaye de saisir des mots dans le tableau
+
+Test 3
+
+Les limites de se programme sont qu'il ne permet pas de saisir plusieurs valeurs à la suite
+rapidement dans le tableau.
