@@ -1,6 +1,3 @@
-/*
- * Le But de se progarmme est de pouvoir déssiner dans un tableau!!!
- */
 package projettest;
 import java.util.Scanner;
 /**
